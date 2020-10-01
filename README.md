@@ -1,2 +1,2 @@
-# simple-web
-this is simple website using html and basic css 
+# Simple-Web
+This is simple website using html and basic css 
