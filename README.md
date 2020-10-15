@@ -1,2 +1,2 @@
 # Simple-Web
-This is simple website using html and basic css 
+This is Awesome website Builded using html and basic css 
