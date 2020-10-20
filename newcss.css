@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url(photo2.jpg);
+    height:70vh;
+    width:70vh;
+    background-size: cover;
+    background-position: center center;
+    position:relative;
+    background-repeat: no-repeat;
+}
+.step1{
+    margin:40px 450px;
+    display:block;
+    width:320px;
+    height: 320px;
+    background:rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+.step2{
+    margin:30px 50px;
+}
+h2{
+    color:crimson;
+    font-size: 60px;  
+}
+h2:hover{
+    color:darkred;
+}
+.step3{
+    margin:0px 65px;
+}
+ul{
+    font-size: 30px;
+    margin:20px 40px;
+    color: white;
+}
+.level1:hover{
+    color: blue;
+}
+.level2:hover{
+    color:skyblue;
+}
+.level3:hover{
+    color:blueviolet;
+}
