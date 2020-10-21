@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>contact form</title>
+<link rel="stylesheet" media="screen" href="style.css">      
+</head>
+<body>
+	<div class="container">
+	<form class="contact-form" action="" method="post" name="contact-form" autocomplete="on">
+		<ul>
+			<li>
+				<h2 style="color:blue; font-size:30px;">Contact Us</h2>
+				<span class="required_notification">* Denotes Required Field </span>
+				</li>
+				<li>
+				<label for="name" style="font-size:16px">Name:</label>
+				<input type="text" name="name" placeholder="YOUR NAME.." required >
+				</li>
+				<li>
+					<label for="email" style="font-size:16px">Email:</label>
+					<input type="text" name="email" required placeholder="abc@xyz" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" ></li>
+			
+					<li>
+						<label for="website" style="font-size:16px">Website:</label>
+						<input type="url" name="website">
+						</li>
+						<li>
+							<label for="phonenum" style="font-size:16px">Phone No.:</label>
+							<input type="number" name="phone_no." required  placeholder="xxxxxxxxxx" pattern="[0-9]{10}" ></li>
+						<li>
+							<label for="Country" style="font-size:16px">Country:</label>
+							<input type="text" name="country" value="INDIA" readonly>
+							<li>
+								<label for="city" style="font-size:16px" >City:</label>
+								<div class="lists">
+
+								<select id="lists">
+									
+									<option value="Indore">Indore</option>
+									<option value="Ratlam">Ratlam</option>
+									<option value="Delhi">Delhi</option>
+									<option value="Banglore">Banglore</option>
+									<option value="Pune">Pune</option>
+									</select>
+								</div>
+							</li>
+					<li>
+						<label for="Password" style="font-size:16px">Enter Password:</label>
+						<input type="password" name="pswd" autocomplete="off">
+					</li>
+					<li>
+						<label for="gender" style="font-size:16px">Gender:</label><br>
+						<label for="male">Male</label>
+						<input type="radio" name="rad" id="male" value="Male"><br>
+						<label for="female">Female</label>
+						<input type="radio" name="rad" id="female" value="Female">
+					</li>
+					<li>
+						<label for="dob">DATE:</label>
+						<input type="date" name="customDate" placeholder="DD-MM-YYYY">
+					<li><div class="box">
+						<label for="true"><b> I confirm that the information given in this form is true, complete and accurate.</b></label>
+						<input type="checkbox" name="true">
+					</li></div>
+
+				</ul> 
+				<input type="submit" value="SUBMIT" style="font-size:30px">
+			</div>
+	</form>
+</body>
+</html>
