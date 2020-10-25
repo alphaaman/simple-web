@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Varela Round", sans-serif;
+  transition: all .5ms ease-out;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
   line-height: 1.6;
   background: black;
   color: white;
+  overflow: hidden;
 }
 
 li {
@@ -26,22 +28,23 @@ a {
   background: rgba(255, 255, 255, 0.1);
   text-align: center;
 }
-.container {
-  width: 85%;
-  margin: 0 auto;
-}
+
 .navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0px 20px;
+}
+
+.nav__menu {
+  display: none;
 }
 
 .logo {
-  margin-right: 1em;
   padding: 0.2em 1em;
   font-size: 1.5rem;
   text-align: center;
-  border-radius: 4px;
-  background-color:black;
+  background-color:#212121;
   letter-spacing: 4px;
   font-family: "cursive";
   font-weight: 900;
@@ -51,24 +54,26 @@ a {
 .nav-items {
   display: flex;
   justify-content: space-between;
-  flex-grow: 1;
   align-items: center;
 }
 
 .list-items {
   display: flex;
-  margin: auto;
   align-items: center;
 }
 .list-group-items {
-  margin: 0em 1em;
+  padding: 0em .5em;
+}
+
+.list-group-items a {
+  font-size: .1rem;
 }
 
 .list-items a {
-  border:4px solid black;
   border-radius: 8px;
-  
-  border-style:inset;
+  font-size: .9rem;
+  background-color: #212121;
+  padding: 7px 15px;
   position: relative;
   display: block;
   font-family: Arial, Helvetica, sans-serif;
@@ -77,16 +82,14 @@ a {
 }
 
 .list-items:hover a {
-  
   opacity: 0.4;
   filter: (3px);
 }
 
 .list-items a:hover {
-
   opacity: 1;
   filter: blur(0);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .list-items a::before {
@@ -99,6 +102,7 @@ a {
   transform-origin: right;
   transform: scaleX(0);
   z-index: -1;
+  border-radius: 4px;
   position: absolute;
   transition: 0.5s;
 }
@@ -108,19 +112,43 @@ a {
   transform: scaleX(1);
   transform-origin: left;
 }
+.sign {
+  padding: 0px 0px 0px 20px;
+}
+
+.material-icons {
+  padding: 0px 5px 0px 0px;
+  font-size: 1.2rem;
+}
 
 .btn {
-  padding: 0.4em 1.2em;
-  background:black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .2em .8em;
+  background:crimson;
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
   border: none;
   font-size: 1.2rem;
   border-radius: 5px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  transform: scale(.9)
+}
+
+.hidden {
+  display: none !important;
+}
+
+.open {
+  display: flex !important;
 }
 
 .home {
-  background-image: url(hero-bg.png);
+  background-image: url(../img/hero-bg.png);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -139,7 +167,7 @@ a {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #000;
   opacity: 0.87;
   z-index: -1;
 }
@@ -184,3 +212,77 @@ a {
   color: crimson;
   background: none;
 }
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0px;
+  background-color: black;
+}
+
+.top-nav__items {
+  padding: 0px 5px;
+}
+
+.top-nav__item {
+  padding: 4px 30px;
+  background-color: #212121;
+  border-bottom: 2px solid black;
+}
+
+.top-nav__item--active {
+  padding: 4px 30px;
+  background-color: crimson;
+  border-bottom: 2px solid black;
+}
+
+.top-nav__btn {
+  border-radius: 5px;
+  border: 2px solid crimson;
+  padding: 4px;
+  margin: 2px 0px;
+}
+
+.top-nav__link--btn {
+  color: crimson;
+}
+
+.top-nav__btn:hover {
+  border: 2px solid #fff;
+}
+
+.top-nav__link--btn:hover {
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 1040px) {
+  .btn span {
+    display: none;
+  }
+
+  .material-icons {
+    padding: 2px 6px;
+    font-size: 1.4rem;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .nav-items {
+    display: none;
+  }
+
+  .nav__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background-color: #424242;
+    padding: 4px 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+

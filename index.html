@@ -4,29 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aman Gupta</title>
-    <link rel="stylesheet" href="./style .css">
+    <link rel="stylesheet" href="./css/material-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
-        <section class="navbar container">
+        <section class="navbar">
             <div class="logo">AMAN</div>
+
+            <a href="#!" class="material-icons nav__menu">menu</a>
             <ul class="nav-items">
                 <div class="list-items">
                     <li class="list-group-items added">
                         <a href="#">Home</a>
-                    </li>
-    
                     </li>
                     <li class="list-group-items"><a href="#">Services</a></li>
                     <li class="list-group-items"><a href="next.html">About</a></li>
                     <li class="list-group-items"><a href="#">Our Team</a></li>
                     <li class="list-group-items"><a href="#">Portfolio</a></li>
                 </div>
+                
                 <div class="sign">
-                    <button class="btn"><a href="contact.html" >CONTACT ME</a></button>
+                    <a class="btn" href="contact.html"><i class="material-icons">phone</i><span>CONTACT ME</span></a>
                 </div>
             </ul>
         </section>
+
+        <div class="hidden top-nav">
+            <ul class="top-nav__items">
+                <li class="top-nav__item--active"><a class="top-nav__link" href="#!">Home</a></li>
+                <li class="top-nav__item"><a class="top-nav__link" href="#!">Services</a></li>
+                <li class="top-nav__item"><a class="top-nav__link" href="#!">About</a></li>
+                <li class="top-nav__item"><a class="top-nav__link" href="#!">Our Team</a></li>
+                <li class="top-nav__item"><a class="top-nav__link" href="#!">Portfolio</a></li>
+                <li class="top-nav__btn"><a class="top-nav__link--btn" href="#!">Contact me</a></li>
+            </ul>
+        </div>
     </header>
 
     <section class="home" id="home">
@@ -38,5 +51,7 @@
             </div>
         </div>
     </section>
+
+    <script src="./script/index.js" async defer></script>
 </body>
 </html>
